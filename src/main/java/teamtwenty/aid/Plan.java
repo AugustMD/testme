@@ -6,7 +6,7 @@ public abstract class Plan{
     double includedMinutes;
     double ratePerAdditionalMinute;
     double ratePerAdditionalLine;
-    public static final double lineFour = 5.0;
+    public static final double LINECOSTOVER4 = 5.0;
 
     // getters
     public abstract double getBasicMontlyRate();
