@@ -8,7 +8,7 @@ public class BillCalculator {
 
 	BillCalculator(){
 		this.expectedBill = 0;
-		this.customerInfo = new Customer("In-gyu");
+		this.customerInfo = new Customer(“sang-soo”);
 		this.customerPlan = this.customerInfo.getPlanInfo();
 		this.minutesUsed = customerInfo.getMinutesUsed();
 		this.numberOfLines = customerInfo.getNumberOfLines();
@@ -22,7 +22,7 @@ public class BillCalculator {
 		{
 			if(this.numberOfLines >= 4)
 			{
-				expectedBill = expectedBill+(2*this.customerPlan.getRatePerAdditionalLine())+(this.customerPlan.lineCostOver4*((this.numberOfLines)-3));
+				expectedBill = expectedBill+(2*this.customerPlan.getRatePerAdditionalLine())+(this.customerPlan.LINECOSTOVER4*((this.numberOfLines)-3));
 			}else{
 				expectedBill = expectedBill+((this.numberOfLines-1)*this.customerPlan.getRatePerAdditionalLine());
 			}
