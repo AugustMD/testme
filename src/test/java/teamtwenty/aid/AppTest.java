@@ -14,7 +14,7 @@ public class AppTest {
 	
 	@Test
 	public void testGold() {
-		assertEquals(gold.getBasicMontlyRate(),49.95);
+		assertEquals(gold.getBasicMontlyRate(),49.95,0.01);
 	}
 
 }
