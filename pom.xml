@@ -10,9 +10,33 @@
   <name>aid</name>
   <url>http://maven.apache.org</url>
 
-  <properties>
+<properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
+   <build>
+  	<plugins>
+  	  <plugin>
+  	    <artifactId>maven-compiler-plugin</artifactId>
+  	    <configuration>
+  	      <source>1.8</source>
+  	      <target>1.8</target>
+  	    </configuration>
+  	  </plugin>
+  	  <plugin>
+  	    <groupId>org.jacoco</groupId>
+  	    <artifactId>jacoco-maven-plugin</artifactId>
+  	    <version>0.7.6.201602180812</version>
+  	    <executions>
+  	      <execution>
+  	        <id>default-prepare-agent</id>
+  	        <goals>
+  	          <goal>prepare-agent</goal>
+  	        </goals>
+  	      </execution>
+  	    </executions>
+  	  </plugin>
+  	</plugins>
+  </build>
 
   <dependencies>
     <dependency>
