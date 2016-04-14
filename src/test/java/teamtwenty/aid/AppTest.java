@@ -1,38 +1,43 @@
 package teamtwenty.aid;
 
-import junit.framework.Test;
+import org.junit.Before;
+import org.junit.Test;
 import junit.framework.TestCase;
-import junit.framework.TestSuite;
 
 /**
  * Unit test for simple App.
  */
-public class AppTest 
+public class GoldTest
     extends TestCase
 {
     /**
-     * Create the test case
-     *
-     * @param testName name of the test case
+     * Set value of each object type
      */
-    public AppTest( String testName )
-    {
-        super( testName );
+    Gold gold;
+    
+    
+    /**
+     * Create the gold plan test case
+     */
+    @Before
+    public void initAppTest() {
+        gold = new Gold();
     }
 
     /**
-     * @return the suite of tests being tested
+     * test gold plan
      */
-    public static Test suite()
-    {
-        return new TestSuite( AppTest.class );
+    @Test
+    public void testgetGold() {
+        assertEquals(gold.getBasicMontlyRate(), 49.95);
     }
 
     /**
-     * Rigourous Test :-)
+     * test silver plan
      */
-    public void testApp()
+    @Test
+    public void testgetSilver()
     {
-        assertTrue( true );
+        assertEquals(silver.getBasicMontlyRate(), 49.95);
     }
 }
