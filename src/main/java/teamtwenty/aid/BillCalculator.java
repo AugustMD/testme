@@ -8,7 +8,7 @@ public class BillCalculator {
 
 	BillCalculator(){
 		this.expectedBill = 0;
-		this.customerInfo = new Customer(“sang-soo”);
+		this.customerInfo = new Customer("sang-soo");
 		this.customerPlan = this.customerInfo.getPlanInfo();
 		this.minutesUsed = customerInfo.getMinutesUsed();
 		this.numberOfLines = customerInfo.getNumberOfLines();
