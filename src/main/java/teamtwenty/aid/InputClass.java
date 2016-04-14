@@ -24,6 +24,12 @@ public class InputClass {
 		log.log(Level.INFO, "\nInput Number Of Lines :");
 		numberOfLines = scan.nextInt();
 	}
+	
+	public InputClass(String plan, int amount, int numberOfLines){
+		this.planType = plan;
+		this.usedAmount = amount;
+		this.numberOfLines = numberOfLines;
+	}
 
 	public String getPlanType(){
 		return this.planType;
